@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Imersão</title>
+    <title>My Spotify</title>
 
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/vars.css" />
@@ -59,9 +59,11 @@
 
         <section class="section-playlist">
           <div class="section-playlist__content">
-            <span class="text title">Create your first playlist</span>
-            <span class="text subtitle">It's easy, we will help you</span>
-            <button class="section-playlist__button">New playlist</button>
+            <span class="text title">Create your first playlist.</span>
+            <span class="text subtitle">It's easy, we will help you.</span>
+            <button class="section-playlist__button">
+              <span>New playlist</span>
+            </button>
           </div>
         </section>
 
@@ -77,35 +79,35 @@
         </div>
       </div>
     </div>
+
     <main>
       <div class="main-container">
         <nav class="header__navigation">
-
           <div class="navigation">
             <button class="arrow-left">
-              <img src="./src/assets/icons/small-left.png" alt="right arrow" />
+              <img src="./src/assets/icons/small-left.png" alt="" />
             </button>
             <button class="arrow-right">
-              <img src="./src/assets/icons/small-right.png" alt="right arrow" />
+              <img src="./src/assets/icons/small-right.png" alt="" />
             </button>
           </div>
 
             <div class="header__search">
-              <img src="./src/assets/icons/search.png" alt="icon search" />
+              <img src="./src/assets/icons/search.png" alt="" />
               <input
                 id="search-input" 
                 maxlength="800" 
                 autocorrect="off" 
                 autocapitalize="off" 
                 spellcheck="false"
-                value=""
                 placeholder="What do you want to listen to?"
+                value=""                
               />
             </div>
 
             <div class="header__login">
-                <button class="subscribe">Inscreva-se</button>
-                <button class="login">Entrar</button>
+                <button class="subscribe">Subscribe</button>
+                <button class="login">Sign-in</button>
             </div>
         </nav>
 
@@ -113,8 +115,9 @@
         <div class="playlist-container">
             <div id="result-playlists">
                 <div class="playlist">
-                    <h1 id="greeting">Boas vindas</h1>
-                    <h2 class="session">Navegar por todas as seções</h2>
+                  <!-- INSERT GOOD MORNING | GOOD AFTERNOON | GOOD NIGHT -->
+                    <h1 id="greeting">Welcome</h1>
+                    <h2 class="session">Browse all sections</h2>
                 </div>
 
                 <!-- LIST DE CARDS -->
@@ -254,9 +257,9 @@
                             </div>
                         </div>
                         <div class="card-text">
-                            <a title="Foo Fighters" class="vst" href=""></a>
+                            <a title="" class="" href=""></a>
                             <span class="artist-name" id="artist-name"></span>
-                            <span class="artist-categorie">Artista</span>
+                            <span class="artist-categorie">Artist</span>
                             </a>
                         </div>
                     </div>
@@ -276,9 +279,9 @@
         </p>
       </div>
       <div class="button">
-        <button type="button">Inscreva-se grátis</button>
+        <button type="button">Try for free</button>
       </div>
     </footer>
-    <script src="./script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>

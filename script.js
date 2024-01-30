@@ -3,23 +3,33 @@ const resultArtist = document.getElementById("result-artist");
 const resultPlaylist = document.getElementById('result-playlists');
 
 function requestApi(searchTerm) {
-    const url = `http://localhost:3000/artists?name_like=${searchTerm}`;
+    const url = `http://localhost:3000/artists/?name_like=${searchTerm}`
     fetch(url)
         .then((response) => response.json())
-        // .then((result) => displayResults(result))
+        .then((result) => displayResults(result))
 }
 
-// function displayResults() { 
-//     resultPlaylist.classList.add('hidden');
-//     result
-// }
+function displayResults(result) {
+    resultPlaylist.classList.add('hidden')
+    const artistName = document.getElementById('artist-name');
+    const artistImage = document.getElementById('artist-img');
 
-document.addEventListener('input', function() {
+    result.forEach(element => {
+        artistName.innerText = element.name;
+        artistImage.src = element.urlImg;
+    });
+
+    resultArtist.classList.remove('hidden');
+}
+
+
+document.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase();
-    if(searchTerm === '') {
+    if(searchTerm === "artist-name") {
         resultPlaylist.classList.add('hidden');
         resultArtist.classList.remove('hidden');
         return
-     }
- requestApi(searchTerm);
+    }
+    
+    requestApi(searchTerm);
 });

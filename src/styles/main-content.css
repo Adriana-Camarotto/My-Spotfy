@@ -5,17 +5,19 @@
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
-}
+  }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
     padding: 12px;
+    max-width: 80vw;
 }
 
 .header__navigation .navigation {
@@ -81,15 +83,31 @@
     font-weight: 700;
     background-color: transparent;
     margin-right: 32px;
+    border: none;
 }
 
 .header__login .login {
     width: 100px;
     height: 48px;
-    color: #000;
+    color: #fff;
+    background-color: #1db954;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+    border: none;
+}
+
+.header__search:hover {
+    border: 1px solid #fff;
+}
+
+.header__login .subscribe:hover {
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.header__login .login:hover {
+    transform: scale(1.04);
 }
 
 /* PLAYLIST */
