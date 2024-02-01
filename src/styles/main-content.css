@@ -89,8 +89,7 @@
 .header__login .login {
     width: 100px;
     height: 48px;
-    color: #fff;
-    background-color: #1db954;
+    color: #000;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
@@ -112,7 +111,8 @@
 
 /* PLAYLIST */
 .playlist-container {
-    height: 68vh;
+    height: 70vh;
+    max-width: 80vw;
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
@@ -138,7 +138,7 @@
 
 /* SCROLL */
 .offer__scroll-container {
-    max-height: 43vh;
+    max-height: 68vh;
     margin: 24px;
     overflow-y: auto;
 }

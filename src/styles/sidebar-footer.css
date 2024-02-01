@@ -138,6 +138,10 @@ body{
     width: 113px;
 }
 
+.section-playlist__content .section-playlist__button:hover {
+    transform: scale(1.04);
+    color: #fff;
+}
 .sidebar .cookies{
     margin:25px 20px;
 }
@@ -160,10 +164,15 @@ body{
     color:#FFF;
     font-weight: bold;
     cursor:pointer;
-    width: 170px;
+    width: 200px;
     margin:8px;
     padding:8px;
     border-radius:20px;
+}
+
+.languages .languages__button:hover{
+    transform: scale(1.04);
+    color: #fff;
 }
 
 .disclaimer-premium {
