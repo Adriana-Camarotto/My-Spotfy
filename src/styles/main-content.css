@@ -111,8 +111,8 @@
 
 /* PLAYLIST */
 .playlist-container {
-    height: 45vh;
-    max-width: 80vw;
+    height: 78vh;
+    max-width: 90vw;
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
@@ -134,11 +134,12 @@
     color: #fff;
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 48px;
 }
 
 /* SCROLL */
 .offer__scroll-container {
-    max-height: 68vh;
+    max-height: 53vh;
     margin: 24px;
     overflow-y: auto;
 }
@@ -156,7 +157,7 @@
 .offer__list-item {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;
