@@ -1,10 +1,12 @@
 /* HEADER */
 
 .main-container {
-    max-width: 80vw;
+    max-width: 85vw;
     height: 100vh;
-    margin-left: 320px;
-    margin-right: 56px;
+    margin-left: 340px;
+    margin-right: 5px;
+    padding:12px;
+  
   }
 
 .header__navigation {
