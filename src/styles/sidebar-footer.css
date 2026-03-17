@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     background-color: #000;
     font-family: var(--font-dm-sans);

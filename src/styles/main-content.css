@@ -1,12 +1,56 @@
 /* HEADER */
 
+/* Hamburger button — hidden on desktop, shown on mobile */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.hamburger-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Sidebar overlay — hidden by default */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.sidebar-overlay--active {
+    display: block;
+}
+
 .main-container {
     max-width: 85vw;
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 340px;
     margin-right: 5px;
-    padding:12px;
-  
+    padding: 12px;
+    padding-bottom: 100px;
   }
 
 .header__navigation {
@@ -71,12 +115,13 @@
 .header__search input {
     background: transparent;
     border: none;
-    padding: 0px 100px 0 12px;
+    padding: 0px 16px 0 12px;
     color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+    width: 100%;
 }
 
 .header__login .subscribe {
@@ -113,7 +158,7 @@
 
 /* PLAYLIST */
 .playlist-container {
-    height: 78vh;
+    min-height: 78vh;
     max-width: 90vw;
     padding-top: 16px;
     margin: 10px;
